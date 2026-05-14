@@ -240,7 +240,7 @@ footer a:hover{color:var(--blue)}
     <a href="#subjects">Предметы</a>
     <a href="#prices">Цены</a>
     <a href="#reviews">Отзывы</a>
-    <a href="#chat">AI-помощник</a>
+    <a href="#chat">Контакты</a>
   </div>
   <a href="#contact" class="nav-btn">Записаться</a>
 </nav>
@@ -253,7 +253,7 @@ footer a:hover{color:var(--blue)}
     <p class="hero-desc">Меня зовут Даниил. Сам сдал ЕГЭ по математике на <strong>90</strong> и по информатике на <strong>95 баллов</strong>. Объясняю столько раз, сколько нужно — без осуждения.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-dark">Записаться бесплатно</a>
-      <a href="#chat" class="btn-ghost">Спросить AI →</a>
+      <a href="#chat" class="btn-ghost">Написать в Telegram →</a>
     </div>
     <div class="hero-stats">
       <div><span class="hst-num">5.0 ★</span><div class="hst-lbl">Рейтинг · 29 отзывов</div></div>
@@ -273,12 +273,6 @@ footer a:hover{color:var(--blue)}
 </section>
 </div>
 
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <span class="mi">Математика <span>·</span></span><span class="mi">Информатика <span>·</span></span><span class="mi">ОГЭ <span>·</span></span><span class="mi">ЕГЭ <span>·</span></span><span class="mi">4–11 классы <span>·</span></span><span class="mi">Онлайн <span>·</span></span><span class="mi">Python <span>·</span></span><span class="mi">Олимпиады <span>·</span></span><span class="mi">Zoom + планшет <span>·</span></span>
-    <span class="mi">Математика <span>·</span></span><span class="mi">Информатика <span>·</span></span><span class="mi">ОГЭ <span>·</span></span><span class="mi">ЕГЭ <span>·</span></span><span class="mi">4–11 классы <span>·</span></span><span class="mi">Онлайн <span>·</span></span><span class="mi">Python <span>·</span></span><span class="mi">Олимпиады <span>·</span></span><span class="mi">Zoom + планшет <span>·</span></span>
-  </div>
-</div>
 
 <div class="results">
   <div class="results-in">
@@ -325,18 +319,6 @@ footer a:hover{color:var(--blue)}
   </div>
 </div>
 
-<section id="how" class="sec">
-  <div class="sec-tag">Процесс</div>
-  <h2 class="sec-h">Как проходят занятия</h2>
-  <div class="how-box">
-    <div class="how-steps">
-      <div class="how-step"><div class="step-c">01</div><div class="step-t">Бесплатный пробный урок</div><p class="step-d">Знакомимся, провожу тестирование, оцениваю уровень. Без обязательств.</p></div>
-      <div class="how-step"><div class="step-c">02</div><div class="step-t">Индивидуальная программа</div><p class="step-d">Составляю план с учётом слабых мест — ОГЭ, ЕГЭ или успеваемость.</p></div>
-      <div class="how-step"><div class="step-c">03</div><div class="step-t">Zoom + планшет</div><p class="step-d">Сжатая теория, сразу практика. Виртуальная доска. 0% осуждения.</p></div>
-      <div class="how-step"><div class="step-c">04</div><div class="step-t">Результат</div><p class="step-d">Иду рядом до самого экзамена. Отслеживаем прогресс вместе.</p></div>
-    </div>
-  </div>
-</section>
 
 <div class="sec-full" style="background:var(--bg2)" id="prices">
   <div style="max-width:1180px;margin:0 auto;padding:0 2rem">
@@ -362,6 +344,28 @@ footer a:hover{color:var(--blue)}
     <div class="rc"><div class="rstars">★★★★★</div><p class="rtext">От первого пробного занятия подросток был в полном восторге — математика может быть ТАКОЙ интересной! Занятия проходят легко и понятно.</p><div class="rmeta"><div class="rname">Екатерина</div><div class="rinfo">Математика · 14 лет · сентябрь 2025</div></div></div>
   </div>
 </section>
+
+<div class="cta-wrap" id="contact">
+  <div class="cta-box">
+    <div class="sec-tag" style="justify-content:center">Запись на урок</div>
+    <h2 class="cta-h">Первый урок —<br><em>бесплатно</em></h2>
+    <p class="cta-sub">Оставь заявку — Даниил свяжется в течение нескольких часов. Или сразу пиши в Telegram.</p>
+    <div class="cform" id="mainForm">
+      <div class="form-row">
+        <input type="text" class="fi" id="fn" placeholder="Имя ребёнка"/>
+        <input type="text" class="fi" id="fc" placeholder="Ваш Telegram или телефон"/>
+      </div>
+      <div class="form-row">
+        <select class="fsel" id="fsub"><option value="" disabled selected>Предмет</option><option>Математика</option><option>Информатика</option><option>Оба предмета</option></select>
+        <select class="fsel" id="fg"><option value="" disabled selected>Класс</option><option>4 класс</option><option>5 класс</option><option>6 класс</option><option>7 класс</option><option>8 класс</option><option>9 класс (ОГЭ)</option><option>10 класс</option><option>11 класс (ЕГЭ)</option></select>
+      </div>
+      <button type="button" class="fsub-btn" id="submitBtn" onclick="submitForm()">Отправить заявку →</button>
+      <p class="fnote">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+      <div class="fok" id="fok">✅ Заявка отправлена! Даниил получил уведомление и свяжется с вами в ближайшее время.</div>
+      <div class="ferr" id="ferr">❌ Ошибка отправки. Напишите напрямую: <a href="https://t.me/dshurbin" target="_blank">@dshurbin</a></div>
+    </div>
+  </div>
+</div>
 
 <div class="sec-full" style="background:var(--bg2)" id="chat">
   <div style="max-width:1180px;margin:0 auto;padding:0 2rem">
@@ -390,33 +394,7 @@ footer a:hover{color:var(--blue)}
           <span class="cchip" style="cursor:default">Пробный урок?</span>
         </div>
         <a href="https://t.me/dshurbin" target="_blank" class="tg-btn" style="text-align:center;justify-content:center;font-size:.9rem">✈ Написать @dshurbin</a>
-        <p style="font-size:.75rem;color:var(--muted);text-align:center">или заполни форму ниже ↓</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="cta-wrap" id="contact">
-  <div class="cta-box">
-    <div class="sec-tag" style="justify-content:center">Запись на урок</div>
-    <h2 class="cta-h">Первый урок —<br><em>бесплатно</em></h2>
-    <p class="cta-sub">Оставь заявку — Даниил свяжется в течение нескольких часов. Или сразу пиши в Telegram.</p>
-    <a href="https://t.me/dshurbin" target="_blank" class="tg-btn">✈ Telegram @dshurbin</a>
-    <div class="or-div">или заполни форму</div>
-    <div class="cform" id="mainForm">
-      <div class="form-row">
-        <input type="text" class="fi" id="fn" placeholder="Имя ребёнка"/>
-        <input type="text" class="fi" id="fc" placeholder="Ваш Telegram или телефон"/>
-      </div>
-      <div class="form-row">
-        <select class="fsel" id="fsub"><option value="" disabled selected>Предмет</option><option>Математика</option><option>Информатика</option><option>Оба предмета</option></select>
-        <select class="fsel" id="fg"><option value="" disabled selected>Класс</option><option>4 класс</option><option>5 класс</option><option>6 класс</option><option>7 класс</option><option>8 класс</option><option>9 класс (ОГЭ)</option><option>10 класс</option><option>11 класс (ЕГЭ)</option></select>
-      </div>
-      <textarea class="fta" id="fgoal" placeholder="Цель занятий (необязательно)..."></textarea>
-      <button type="button" class="fsub-btn" id="submitBtn" onclick="submitForm()">Отправить заявку →</button>
-      <p class="fnote">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
-      <div class="fok" id="fok">✅ Заявка отправлена! Даниил получил уведомление и свяжется с вами в ближайшее время.</div>
-      <div class="ferr" id="ferr">❌ Ошибка отправки. Напишите напрямую: <a href="https://t.me/dshurbin" target="_blank">@dshurbin</a></div>
     </div>
   </div>
 </div>
@@ -435,7 +413,7 @@ async function submitForm(){
   const c=document.getElementById("fc").value.trim();
   const s=document.getElementById("fsub").value;
   const g=document.getElementById("fg").value;
-  const goal=document.getElementById("fgoal").value.trim();
+  const goal="";
   if(!n||!c||!s||!g){alert("Пожалуйста, заполните все обязательные поля.");return;}
 
   const btn=document.getElementById("submitBtn");

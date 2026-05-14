@@ -14,13 +14,13 @@
   --green:#16a34a;--green-l:#f0fdf4;
   --yellow:#f59e0b;--border:#e0dbd2;--r:14px;--r2:22px;
 }
-html{scroll-behavior:smooth}
-body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;font-size:18px}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 
 nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:100px;padding:.55rem 1.4rem;display:flex;align-items:center;gap:2rem;box-shadow:0 4px 24px rgba(0,0,0,.07)}
-.nav-logo{font-size:.9rem;font-weight:800;color:var(--ink);white-space:nowrap;letter-spacing:-.01em}
+.nav-logo{font-size:.9rem;font-weight:700;color:var(--ink);white-space:nowrap;letter-spacing:-.01em}
 .nav-links{display:flex;gap:1.5rem}
-.nav-links a{font-size:.78rem;color:var(--muted);text-decoration:none;font-weight:600;transition:color .15s}
+.nav-links a{font-size:.78rem;color:var(--muted);text-decoration:none;font-weight:600;transition:color .15s;white-space:nowrap}
 .nav-links a:hover{color:var(--ink)}
 .nav-btn{background:var(--ink);color:#fff;border:none;border-radius:100px;padding:.48rem 1.1rem;font-family:"Plus Jakarta Sans",sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;text-decoration:none;transition:opacity .15s}
 .nav-btn:hover{opacity:.8}
@@ -31,7 +31,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .hero-tag{display:inline-flex;align-items:center;gap:.45rem;background:var(--green-l);border:1px solid #bbf7d0;border-radius:100px;padding:.38rem .9rem;font-size:.72rem;font-weight:700;color:var(--green);margin-bottom:2rem}
 .hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite;flex-shrink:0}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.hero h1{font-size:clamp(2.8rem,5vw,4.8rem);font-weight:800;line-height:1.04;letter-spacing:-.03em;color:var(--ink);margin-bottom:1.4rem}
+.hero h1{font-size:clamp(2.8rem,5vw,4.8rem);font-weight:700;line-height:1.12;letter-spacing:-.03em;color:var(--ink);margin-bottom:1.4rem}
 .hero h1 .accent{color:var(--blue)}
 .hero-desc{font-size:.9875rem;color:var(--ink2);line-height:1.75;max-width:430px;margin-bottom:2.25rem;font-weight:400}
 .hero-btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2.5rem}
@@ -40,7 +40,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--border);border-radius:100px;padding:.8rem 1.6rem;font-family:"Plus Jakarta Sans",sans-serif;font-size:.875rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;transition:border-color .15s}
 .btn-ghost:hover{border-color:var(--ink)}
 .hero-stats{display:flex;gap:2rem}
-.hst-num{font-size:1.875rem;font-weight:800;color:var(--ink);display:block;line-height:1;letter-spacing:-.03em}
+.hst-num{font-size:1.875rem;font-weight:700;color:var(--ink);display:block;line-height:1;letter-spacing:-.03em}
 .hst-lbl{font-size:.72rem;color:var(--muted);font-weight:500;margin-top:.2rem}
 
 /* HERO RIGHT — photo no crop */
@@ -49,7 +49,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .hero-photo{width:100%;display:block;object-fit:contain;object-position:top center;max-height:520px}
 .hero-pills{display:grid;grid-template-columns:1fr 1fr;gap:.875rem}
 .hpill{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:1.1rem 1.25rem;box-shadow:0 2px 12px rgba(0,0,0,.04)}
-.hpill-num{font-size:1.75rem;font-weight:800;color:var(--ink);line-height:1;letter-spacing:-.03em}
+.hpill-num{font-size:1.75rem;font-weight:700;color:var(--ink);line-height:1;letter-spacing:-.03em}
 .hpill-lbl{font-size:.7rem;color:var(--muted);font-weight:500;margin-top:.25rem}
 
 /* MARQUEE */
@@ -64,7 +64,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .results-in{max-width:1180px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr)}
 .ri{text-align:center;padding:0 1.25rem;border-right:1px solid rgba(255,255,255,.15)}
 .ri:last-child{border-right:none}
-.ri-num{font-size:2.75rem;font-weight:800;color:#fff;line-height:1;display:block;letter-spacing:-.03em}
+.ri-num{font-size:2.75rem;font-weight:700;color:#fff;line-height:1;display:block;letter-spacing:-.03em}
 .ri-lbl{font-size:.72rem;color:rgba(255,255,255,.55);margin-top:.5rem;font-weight:500}
 
 /* SECTIONS */
@@ -72,7 +72,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .sec-full{padding:5rem 2rem}
 .sec-tag{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:.875rem;display:flex;align-items:center;gap:.5rem}
 .sec-tag::before{content:"";display:block;width:18px;height:2px;background:var(--blue);border-radius:2px}
-.sec-h{font-size:clamp(1.75rem,3.5vw,2.8rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;color:var(--ink);margin-bottom:.875rem}
+.sec-h{font-size:clamp(1.75rem,3.5vw,2.8rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;color:var(--ink);margin-bottom:.875rem}
 .sec-h em{font-style:italic;color:var(--blue);font-weight:700}
 
 /* ABOUT */
@@ -82,7 +82,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .about-badge{position:absolute;bottom:1.5rem;right:-1.25rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:1.1rem 1.4rem;box-shadow:0 8px 30px rgba(0,0,0,.09);min-width:170px}
 .ab-lbl{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem}
 .ab-stars{color:var(--yellow);font-size:.95rem;letter-spacing:2px;margin-bottom:.2rem}
-.ab-val{font-size:1.4rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.ab-val{font-size:1.4rem;font-weight:700;color:var(--ink);letter-spacing:-.02em}
 .ab-sub{font-size:.72rem;color:var(--muted)}
 .about-text{padding-top:2rem}
 .about-p{font-size:.9375rem;color:var(--ink2);line-height:1.8;margin-bottom:1.1rem}
@@ -101,7 +101,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .subj-card:hover::after{transform:scaleX(1)}
 .sn{font-size:.68rem;font-weight:700;color:var(--muted);letter-spacing:.1em;margin-bottom:1.25rem}
 .sico{font-size:2.25rem;margin-bottom:.875rem;display:block}
-.sname{font-size:1.4rem;font-weight:800;color:var(--ink);margin-bottom:.625rem;letter-spacing:-.02em}
+.sname{font-size:1.4rem;font-weight:700;color:var(--ink);margin-bottom:.625rem;letter-spacing:-.02em}
 .sdesc{font-size:.85rem;color:var(--ink2);line-height:1.7;margin-bottom:1.25rem}
 .tags{display:flex;flex-wrap:wrap;gap:.375rem}
 .tag{font-size:.7rem;font-weight:600;padding:.28rem .7rem;background:var(--blue-l);border-radius:100px;color:var(--blue)}
@@ -112,7 +112,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .how-step{position:relative}
 .how-step::after{content:"";position:absolute;top:1.5rem;left:3.25rem;right:-1.5rem;height:1px;background:var(--border)}
 .how-step:last-child::after{display:none}
-.step-c{width:3rem;height:3rem;border-radius:50%;background:var(--blue-l);border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:800;color:var(--blue);margin-bottom:1.1rem;position:relative;z-index:1}
+.step-c{width:3rem;height:3rem;border-radius:50%;background:var(--blue-l);border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;color:var(--blue);margin-bottom:1.1rem;position:relative;z-index:1}
 .step-t{font-size:.875rem;font-weight:700;color:var(--ink);margin-bottom:.35rem}
 .step-d{font-size:.78rem;color:var(--muted);line-height:1.6}
 
@@ -128,7 +128,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 .pc.feat .pfeat{color:rgba(255,255,255,.6)}
 .pc.feat .pfeat::before{color:var(--yellow)}
 .ptag{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:1.1rem}
-.pval{font-size:2rem;font-weight:800;color:var(--ink);line-height:1;margin-bottom:.2rem;letter-spacing:-.03em}
+.pval{font-size:2rem;font-weight:700;color:var(--ink);line-height:1;margin-bottom:.2rem;letter-spacing:-.03em}
 .pper{font-size:.78rem;color:var(--muted);margin-bottom:1.25rem}
 .pdiv{height:1px;background:var(--border);margin-bottom:1.25rem}
 .pfeats{list-style:none;display:flex;flex-direction:column;gap:.55rem;flex:1}
@@ -162,7 +162,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 
 .chat-box{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r2);overflow:hidden;display:flex;flex-direction:column;height:490px;box-shadow:0 8px 40px rgba(0,0,0,.07)}
 .ctop{padding:.8rem 1.1rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.7rem}
-.cava{width:32px;height:32px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:#fff;flex-shrink:0}
+.cava{width:32px;height:32px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff;flex-shrink:0}
 .cname{font-size:.84rem;font-weight:700;color:var(--ink)}
 .cstatus{font-size:.68rem;color:var(--green);margin-left:auto;font-weight:700;display:flex;align-items:center;gap:.35rem}
 .cdot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
@@ -190,7 +190,7 @@ nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:100;back
 /* CTA */
 .cta-wrap{background:var(--bg2);padding:6rem 2rem}
 .cta-box{max-width:740px;margin:0 auto;background:var(--white);border:1.5px solid var(--border);border-radius:var(--r2);padding:3.25rem;box-shadow:0 8px 40px rgba(0,0,0,.06);text-align:center}
-.cta-h{font-size:clamp(1.875rem,4vw,2.875rem);font-weight:800;color:var(--ink);line-height:1.1;letter-spacing:-.03em;margin-bottom:.875rem}
+.cta-h{font-size:clamp(1.875rem,4vw,2.875rem);font-weight:700;color:var(--ink);line-height:1.1;letter-spacing:-.03em;margin-bottom:.875rem}
 .cta-h em{font-style:italic;color:var(--blue)}
 .cta-sub{font-size:.9rem;color:var(--muted);margin-bottom:1.875rem;line-height:1.7}
 .tg-btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--blue);color:#fff;border:none;border-radius:100px;padding:.8rem 1.875rem;font-family:"Plus Jakarta Sans",sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;text-decoration:none;transition:opacity .15s;margin-bottom:1.875rem}
@@ -216,9 +216,10 @@ footer a{color:var(--ink2);text-decoration:none;font-weight:600}
 footer a:hover{color:var(--blue)}
 
 @media(max-width:900px){
-  nav{width:calc(100% - 2rem);padding:.5rem 1rem}
+  nav{width:auto;padding:.5rem 1rem}
   .nav-links{display:none}
   .hero{grid-template-columns:1fr;padding-top:6rem}
+  .hero h1{font-size:2rem}
   .hero-right{display:none}
   .about-grid,.chat-grid{grid-template-columns:1fr}
   .about-badge{display:none}
@@ -240,7 +241,6 @@ footer a:hover{color:var(--blue)}
     <a href="#subjects">Предметы</a>
     <a href="#prices">Цены</a>
     <a href="#reviews">Отзывы</a>
-    <a href="#chat">Контакты</a>
   </div>
   <a href="#contact" class="nav-btn">Записаться</a>
 </nav>
@@ -249,11 +249,10 @@ footer a:hover{color:var(--blue)}
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag"><span class="hero-tag-dot"></span>Онлайн · принимаю учеников</div>
-    <h1>Сдадим<br><span class="accent">ОГЭ и ЕГЭ</span><br>вместе</h1>
+    <h1>Математика и информатика — <span class="accent">с нуля до результата</span></h1>
     <p class="hero-desc">Меня зовут Даниил. Сам сдал ЕГЭ по математике на <strong>90</strong> и по информатике на <strong>95 баллов</strong>. Объясняю столько раз, сколько нужно — без осуждения.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-dark">Записаться бесплатно</a>
-      <a href="#chat" class="btn-ghost">Написать в Telegram →</a>
     </div>
     <div class="hero-stats">
       <div><span class="hst-num">5.0 ★</span><div class="hst-lbl">Рейтинг · 29 отзывов</div></div>
@@ -274,14 +273,6 @@ footer a:hover{color:var(--blue)}
 </div>
 
 
-<div class="results">
-  <div class="results-in">
-    <div class="ri"><span class="ri-num">95</span><div class="ri-lbl">Баллов ЕГЭ по информатике</div></div>
-    <div class="ri"><span class="ri-num">90</span><div class="ri-lbl">Баллов ЕГЭ по математике</div></div>
-    <div class="ri"><span class="ri-num">32/32</span><div class="ri-lbl">Баллов ОГЭ по математике</div></div>
-    <div class="ri"><span class="ri-num">4–11</span><div class="ri-lbl">Классы</div></div>
-  </div>
-</div>
 
 <section id="about" class="sec">
   <div class="about-grid">
@@ -333,7 +324,7 @@ footer a:hover{color:var(--blue)}
 </div>
 
 <section id="reviews" class="sec">
-  <div class="sec-tag">Отзывы · 5.0 из 5.0 · 29 отзывов</div>
+  <div class="sec-tag">Отзывы · 5.0 из 5.0 · 29 отзывов · <a href="https://profi.ru/profile/ShurbinDS" target="_blank" style="color:var(--blue);text-decoration:none">Профи.ру ↗</a></div>
   <h2 class="sec-h">Что говорят ученики</h2>
   <div class="rev-grid">
     <div class="rc"><div class="rstars">★★★★★</div><p class="rtext">Даниил легко нашёл общий язык с подростком, атмосфера комфортная. Сын занимается с удовольствием, стал лучше понимать предмет и чувствует себя увереннее.</p><div class="rmeta"><div class="rname">Екатерина</div><div class="rinfo">Математика · декабрь 2025</div></div></div>
@@ -345,11 +336,57 @@ footer a:hover{color:var(--blue)}
   </div>
 </section>
 
+<section class="sec" id="faq" style="display:none">
+  <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:2rem">
+
+    <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+      <summary style="padding:1.1rem 1.25rem;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+        Сколько длится урок?
+        <span style="font-size:1.2rem;color:var(--muted);flex-shrink:0">+</span>
+      </summary>
+      <p style="padding:0 1.25rem 1.1rem;font-size:.875rem;color:var(--ink2);line-height:1.75">Стандартный урок — 60 минут. По желанию можно договориться на 90 минут, особенно при интенсивной подготовке к ЕГЭ.</p>
+    </details>
+
+    <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+      <summary style="padding:1.1rem 1.25rem;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+        Как происходит оплата?
+        <span style="font-size:1.2rem;color:var(--muted);flex-shrink:0">+</span>
+      </summary>
+      <p style="padding:0 1.25rem 1.1rem;font-size:.875rem;color:var(--ink2);line-height:1.75">Оплата по договорённости — обычно раз в неделю или за несколько уроков вперёд. Перевод на карту.</p>
+    </details>
+
+    <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+      <summary style="padding:1.1rem 1.25rem;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+        Можно ли перенести или отменить занятие?
+        <span style="font-size:1.2rem;color:var(--muted);flex-shrink:0">+</span>
+      </summary>
+      <p style="padding:0 1.25rem 1.1rem;font-size:.875rem;color:var(--ink2);line-height:1.75">Да, если предупредить заранее — минимум за несколько часов. Форс-мажоры обсуждаем индивидуально.</p>
+    </details>
+
+    <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+      <summary style="padding:1.1rem 1.25rem;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+        Что нужно для занятий онлайн?
+        <span style="font-size:1.2rem;color:var(--muted);flex-shrink:0">+</span>
+      </summary>
+      <p style="padding:0 1.25rem 1.1rem;font-size:.875rem;color:var(--ink2);line-height:1.75">Компьютер или планшет, интернет и Zoom. Больше ничего — всё остальное обеспечиваю я: виртуальная доска, материалы, задания.</p>
+    </details>
+
+    <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+      <summary style="padding:1.1rem 1.25rem;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+        С какого класса лучше начинать подготовку к ЕГЭ?
+        <span style="font-size:1.2rem;color:var(--muted);flex-shrink:0">+</span>
+      </summary>
+      <p style="padding:0 1.25rem 1.1rem;font-size:.875rem;color:var(--ink2);line-height:1.75">В идеале — с 10 класса, тогда есть время не спеша закрыть все темы. В 11 классе тоже реально поднять балл, просто темп будет выше.</p>
+    </details>
+
+  </div>
+</section>
+
 <div class="cta-wrap" id="contact">
   <div class="cta-box">
     <div class="sec-tag" style="justify-content:center">Запись на урок</div>
     <h2 class="cta-h">Первый урок —<br><em>бесплатно</em></h2>
-    <p class="cta-sub">Оставь заявку — Даниил свяжется в течение нескольких часов. Или сразу пиши в Telegram.</p>
+    <p class="cta-sub">Оставь заявку — Даниил свяжется в течение нескольких часов.</p>
     <div class="cform" id="mainForm">
       <div class="form-row">
         <input type="text" class="fi" id="fn" placeholder="Имя ребёнка"/>
@@ -367,40 +404,10 @@ footer a:hover{color:var(--blue)}
   </div>
 </div>
 
-<div class="sec-full" style="background:var(--bg2)" id="chat">
-  <div style="max-width:1180px;margin:0 auto;padding:0 2rem">
-    <div class="chat-grid">
-      <div>
-        <div class="sec-tag">Связь · Быстро</div>
-        <h2 class="sec-h">Есть вопросы?<br>Пишите прямо<br><em>в Telegram</em></h2>
-        <div class="chat-feats">
-          <div class="cf"><div class="cf-ico">⚡</div><div><div class="cf-t">Отвечаю быстро</div><div class="cf-d">Обычно в течение нескольких часов</div></div></div>
-          <div class="cf"><div class="cf-ico">📚</div><div><div class="cf-t">Любые вопросы</div><div class="cf-d">Предметы, цены, расписание, запись</div></div></div>
-          <div class="cf"><div class="cf-ico">🎯</div><div><div class="cf-t">Пробный урок бесплатно</div><div class="cf-d">Напишите — договоримся на удобное время</div></div></div>
-          <div class="cf"><div class="cf-ico">✅</div><div><div class="cf-t">Только онлайн</div><div class="cf-d">Zoom + планшет, из любой точки</div></div></div>
-        </div>
-      </div>
-      <div class="chat-box" style="height:auto;padding:2rem;display:flex;flex-direction:column;gap:1.5rem;justify-content:center">
-        <div class="ctop" style="padding:0;border:none">
-          <div class="cava" style="width:52px;height:52px;font-size:1.1rem;flex-shrink:0">Д</div>
-          <div><div class="cname" style="font-size:1rem;margin-bottom:.2rem">Даниил Сергеевич</div><div style="font-size:.75rem;color:var(--muted)">Репетитор математики и информатики</div></div>
-          <div class="cstatus" style="margin-left:auto"><span class="cdot"></span>доступен</div>
-        </div>
-        <p style="font-size:.9rem;color:var(--ink2);line-height:1.75">Напишите мне в Telegram — расскажите про ученика и цели, и мы договоримся на бесплатный пробный урок 🎓</p>
-        <div class="cchips" style="padding:0;background:none;border:none;flex-wrap:wrap;gap:.4rem">
-          <span class="cchip" style="cursor:default">Какие предметы?</span>
-          <span class="cchip" style="cursor:default">Сколько стоит?</span>
-          <span class="cchip" style="cursor:default">Как записаться?</span>
-          <span class="cchip" style="cursor:default">Пробный урок?</span>
-        </div>
-        <a href="https://t.me/dshurbin" target="_blank" class="tg-btn" style="text-align:center;justify-content:center;font-size:.9rem">✈ Написать @dshurbin</a>
-      </div>
-    </div>
-  </div>
 </div>
 
 <footer>
-  <p>© 2025 Даниил Сергеевич — репетитор по математике и информатике &nbsp;·&nbsp; <a href="https://t.me/dshurbin" target="_blank">Telegram @dshurbin</a> &nbsp;·&nbsp; Только онлайн</p>
+  <p>© 2025 Даниил Сергеевич — репетитор по математике и информатике &nbsp;·&nbsp; <a href="https://t.me/dshurbin" target="_blank">Telegram @dshurbin</a> &nbsp;·&nbsp; <a href="https://profi.ru/profile/ShurbinDS" target="_blank">Профи.ру</a> &nbsp;·&nbsp; Только онлайн</p>
 </footer>
 
 <script>
